@@ -1,0 +1,75 @@
+{/* remember to specify resoulution for image */}
+          {/* <Image source={require('./assets/favicon.png')}>  for offline assets*/}
+
+
+
+          {/* <TouchableHighlight onPress={() => console.log("sup man")}>
+          <Image 
+    
+          source={{
+            width: 200,
+            height: 300,
+            uri: "https://picsum.photos/200/300"}} > 
+        
+
+        </Image>
+
+          </TouchableHighlight> */}
+          <TouchableHighlight onPress={() => console.log("sup man")}>
+
+        <View style={{width: 150, height: 50, backgroundColor: "red" }}> 
+
+
+        </View>
+        </TouchableHighlight>
+      <StatusBar style="auto" />
+
+
+      /// for login screen
+
+      console.log(Dimensions.get("screen"));
+
+const handlePress = () => console.log("text Clicked")
+
+  return (
+    <SafeAreaView style={styles.container}>
+
+     <View
+     style={{
+      backgroundColor: 'dodgerblue',
+      width: "50%",
+      height: 70,
+     }}>
+       
+       
+
+
+
+     </View>
+
+    
+     
+     
+     {/* Always wrap up text in text component  */}
+     {/* onpress pressing something  */}
+      <Text numberOfLines={1} onPress={(handlePress)}> 
+        Welcome to the Authenticaion Application 
+         </Text> 
+         <Button  
+         color="Blue"
+         title = "click me" 
+         onPress={() => Alert.alert("Logging In", "Please wait while authenticaiton is in process", [
+           {text: "yes", onPress: () => console.log("yes")},
+           {text: "no"},
+         ] )}/>
+
+    </SafeAreaView>
+  );
+
+  const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'orange',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
