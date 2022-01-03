@@ -9,7 +9,7 @@ function ViewImageScreen(props) {
 
     <Image resizeMode="contain" 
     style={styles.image} 
-    source={require('../assets/ViewImageScreen.jpg')} />
+    source={require('../assets/1WelcomeScreen.jpg')} />
     </View>     
     );
 }
@@ -44,5 +44,7 @@ const styles = StyleSheet.create({
 
     },
 });
+
+
 export default ViewImageScreen;
 

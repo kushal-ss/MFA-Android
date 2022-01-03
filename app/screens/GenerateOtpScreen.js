@@ -5,7 +5,7 @@ const App = () => {
   const [OTP, setOTP] = useState('');
   const generateOTP = (length) => {
     const characters =
-      '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      '0123456789';
     const characterCount = characters.length;
     let OTPvalue = '';
     for (let i = 0; i < length; i++) {
