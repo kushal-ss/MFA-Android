@@ -27,7 +27,7 @@ function WelcomeScreen(props) {
 
 const styles = StyleSheet.create({
     background: {
-        flex:1, // so background will take entire scre
+        flex:1, // so background will take entire screen
         justifyContent: "flex-end",
         alignItems: "center",
 
